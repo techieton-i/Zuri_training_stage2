@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-btn_burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background-color: #636363;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-btn_burger::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background-color: #636363;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-btn_burger::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  width: 20px;
+  height: 3px;
+  background-color: #636363;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.menu-btn_burger.open {
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
+  background: transparent;
+}
+
+.menu-btn_burger.open::before {
+  -webkit-transform: rotate(45deg) translate(5px, 8px);
+          transform: rotate(45deg) translate(5px, 8px);
+}
+
+.menu-btn_burger.open::after {
+  width: 28px;
+  -webkit-transform: rotate(-45deg) translate(3px, -7px);
+          transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.home {
+  margin: 5em;
+  color: #333333;
+}
+
+.home h2,
+.home h3 {
+  text-align: center;
+  padding: 0.2em;
+}
+
+.home_contact {
+  text-align: center;
+  margin: auto;
+}
+
+.home_contact div {
+  margin: 1em;
+}
+
+.home .social-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.home .social-container a {
+  margin-right: 1em;
+}
+
+.home .name {
+  font-weight: 600;
+  font-size: 2.5em;
+  text-transform: capitalize;
+}
+
+.about {
+  padding: 2em;
+}
+
+.about_img {
+  width: 70vw;
+  margin: 1em auto;
+}
+
+.about_text {
+  text-align: center;
+  color: #333333;
+  margin: 1em 0;
+}
+
+.about_text > p {
+  line-height: 1.5em;
+  margin: 0.7em;
+  font-size: 0.9em;
+}
+
+.about_text_lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about_text_lang p {
+  border: 1px solid #27bfca;
+  margin: 1em;
+  padding: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 0.9em;
+  border-radius: 10px;
+}
+
+.about_download {
+  margin: 1em auto;
+  background-color: #27bfca;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 20px;
+  padding: 15px;
+  font-weight: 700;
+}
+
+.service {
+  margin: 1em;
+  padding: 1em;
+}
+
+.service_title {
+  margin: 2em;
+  position: relative;
+}
+
+.service_title h3 {
+  font-weight: 700;
+  color: #333333;
+}
+
+.service_title::before {
+  content: "";
+  position: absolute;
+  width: 97px;
+  height: 3px;
+  bottom: -7px;
+  border-radius: 10px;
+  background-color: #cacaca;
+}
+
+.service_title::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 3px;
+  bottom: -7px;
+  border-radius: 10px;
+  background-color: #27bfca;
+}
+
+body {
+  background: #f3f3f3;
+  color: #000;
+  height: 100vh;
+  line-height: 1;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.img-container {
+  width: 250px;
+  height: 100px;
+}
+
+header {
+  background-color: #fff;
+  position: relative;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0 0 40px -80px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 40px -80px rgba(0, 0, 0, 0.8);
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,38 @@
+.service {
+    margin: 1em;
+    padding: 1em;
+
+
+    &_title {
+        margin: 2em;
+        position: relative;
+
+        h3 {
+            font-weight: 700;
+            color: $text-color;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 97px;
+            height: 3px;
+            bottom: -7px;
+            border-radius: 10px;
+            background-color: rgb(202, 202, 202);
+
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 35px;
+            height: 3px;
+            bottom: -7px;
+            border-radius: 10px;
+            background-color: rgb(39, 191, 202);
+        }
+    }
+
+
+}

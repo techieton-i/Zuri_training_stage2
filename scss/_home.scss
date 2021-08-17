@@ -1,0 +1,35 @@
+.home {
+    margin: 5em;
+    color: $text-color;
+
+    h2,
+    h3 {
+        text-align: center;
+        padding: 0.2em;
+    }
+
+    &_contact {
+        text-align: center;
+        margin: auto;
+
+        div {
+            margin: 1em;
+        }
+    }
+
+    .social-container {
+        width: fit-content;
+        margin: auto;
+
+        a {
+            margin-right: 1em;
+        }
+
+    }
+
+    .name {
+        font-weight: 600;
+        font-size: 2.5em;
+        text-transform: capitalize;
+    }
+}

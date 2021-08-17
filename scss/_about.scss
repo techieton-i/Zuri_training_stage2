@@ -1,0 +1,48 @@
+.about {
+    padding: 2em;
+
+
+    &_img {
+        width: 70vw;
+        margin: 1em auto;
+    }
+
+    &_text {
+        text-align: center;
+        color: $text-color;
+        margin: 1em 0;
+
+        >p {
+            line-height: 1.5em;
+            margin: 0.7em;
+            font-size: 0.9em;
+        }
+
+        &_lang {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+
+            p {
+                border: 1px solid rgb(39, 191, 202);
+                margin: 1em;
+                padding: 10px;
+                height: fit-content;
+                font-size: 0.9em;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    &_download {
+        margin: 1em auto;
+        background-color: rgb(39, 191, 202);
+        width: fit-content;
+        border-radius: 20px;
+        padding: 15px;
+        font-weight: 700;
+
+
+    }
+}
