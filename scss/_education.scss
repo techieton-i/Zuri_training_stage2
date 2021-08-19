@@ -1,0 +1,46 @@
+.uni {
+    margin: 2em;
+
+
+    .school-period {
+        width: fit-content;
+        padding: 8px;
+        margin: 0 1em;
+        border: 3px solid $sec-color;
+        background-color: rgb(238, 238, 238);
+        border-radius: 30px;
+
+
+    }
+
+    .info {
+        margin-left: 5em;
+        margin-top: 1em;
+        padding: 1em;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -1em;
+            left: -2em;
+            width: 1px;
+            opacity: 0.5;
+            height: 150%;
+            background-color: rgb(230, 230, 230);
+
+        }
+
+    }
+
+}
+
+.school-name {
+    margin-bottom: 5em;
+    line-height: 1em;
+    font-size: 1.1em;
+}
+
+.school_course-name {
+    margin: 1em 0.2em;
+}

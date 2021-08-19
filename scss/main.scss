@@ -4,6 +4,8 @@
 @import "./home";
 @import "./about";
 @import "./service";
+@import './education';
+@import "./skills";
 
 
 body {
@@ -46,6 +48,7 @@ header {
 }
 
 .card {
+    margin: 2em;
     padding: 2em;
     text-align: center;
     border-radius: 10px;
