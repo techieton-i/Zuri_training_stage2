@@ -34,7 +34,7 @@ img {
 
 .img-container {
     width: 250px;
-    height: 100px;
+    height: 90px;
 }
 
 header {
@@ -46,5 +46,10 @@ header {
 }
 
 .card {
-    
+    padding: 2em;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(233, 233, 233);
+    box-shadow: 0 0 8em -90px rgba(0, 0, 0, .9);
+
 }

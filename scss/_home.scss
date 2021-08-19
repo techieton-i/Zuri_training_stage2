@@ -2,27 +2,55 @@
     margin: 5em;
     color: $text-color;
 
+
+    .img_container {
+        height: 18em;
+        margin: 2em 0;
+        border: 1em solid white;
+        border-radius: 50%;
+        background: url('/resources/img/IMG-5862\ -\ Copy.jpg  ');
+        background-position: center;
+        background-size: cover;
+    }
+
     h2,
     h3 {
         text-align: center;
         padding: 0.2em;
     }
 
+    h3 {
+        opacity: 0.5;
+    }
+
     &_contact {
         text-align: center;
         margin: auto;
 
+        .email {
+            display: flex;
+
+            span {
+                margin-left: 0.5em;
+            }
+        }
+
         div {
-            margin: 1em;
+            margin: 2em;
+
+
         }
     }
 
     .social-container {
         width: fit-content;
-        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
 
         a {
-            margin-right: 1em;
+            margin: 1em 1em;
+            font-size: small;
         }
 
     }

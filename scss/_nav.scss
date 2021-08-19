@@ -1,8 +1,8 @@
 .menu-btn {
-    position: absolute;
+    position: fixed;
     z-index: 1;
-    right: 1rem;
-    top: 1rem;
+    right: 1.5rem;
+    top: 1.5rem;
     height: 20px;
     width: 28px;
     cursor: pointer;
@@ -52,5 +52,61 @@
             }
         }
 
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    opacity: 0.95;
+    display: block;
+
+    &_list {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        background: $primary-color;
+        list-style-type: none;
+        padding-right: 1rem;
+        transform: translateY(-100%);
+        @include transition-ease;
+
+        &.open {
+            transform: translateY(0);
+        }
+
+        .nav-item {
+            transform: translateX(100vw);
+            @include transition-ease;
+
+            &.open {
+                transform: translateX(0);
+            }
+
+            &.active>a {
+                color: $sec-color;
+            }
+        }
+
+        .nav-link {
+            display: block;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: 1rem 0;
+            font-weight: 500;
+            @include transition-ease;
+
+
+            &:hover {
+                color: $secondary-color;
+
+
+            }
+        }
     }
 }

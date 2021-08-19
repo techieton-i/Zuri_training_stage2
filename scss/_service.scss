@@ -35,5 +35,20 @@
         }
     }
 
+    &_item {
+        margin: 2em auto;
+        height: 20em;
+
+        .alt {
+            color: $secondary-color;
+            margin: 20px 0;
+        }
+
+        h3 {
+            margin: 20px 0;
+        }
+
+        
+    }
 
 }
