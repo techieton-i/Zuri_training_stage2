@@ -81,6 +81,7 @@
   width: 100vw;
   opacity: 0.95;
   display: block;
+  z-index: 100;
 }
 
 .navbar_list {
