@@ -1,12 +1,12 @@
 .home {
-    margin: 5em;
+    margin: 4em;
     color: $text-color;
     text-align: left;
 
 
     img {
-        min-height: 300px;
-        width: 18em;
+        min-height: 280px;
+        width: 100%;
         margin: 2em auto;
         border: 1em solid white;
         border-radius: 50%;
@@ -16,8 +16,6 @@
     }
 
     .img_container {
-        min-height: 300px;
-        width: 18em;
         margin: auto;
         border-radius: 50%;
     }
