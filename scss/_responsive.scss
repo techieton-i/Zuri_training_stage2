@@ -210,6 +210,7 @@
 @include media-xl {
     .home {
         margin: 7em auto;
+        justify-content: space-between;
     }
 
     .about {

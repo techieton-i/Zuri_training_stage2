@@ -1,21 +1,19 @@
 .home {
-    margin: 4em;
+    margin: 3em;
     color: $text-color;
     text-align: left;
 
 
     img {
         min-height: 280px;
-        width: 100%;
+        width: 18em;
         margin: 2em auto;
         border: 1em solid white;
         border-radius: 50%;
-        background: url('/dist/img/my_pic.jpg');
-        background-position: top;
-        background-size: cover;
     }
 
     .img_container {
+        width: fit-content;
         margin: auto;
         border-radius: 50%;
     }
