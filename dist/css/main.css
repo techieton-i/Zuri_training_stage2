@@ -70,7 +70,7 @@
 }
 
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -144,8 +144,9 @@
 }
 
 .home .img_container {
-  height: 18em;
-  margin: 2em 0;
+  min-height: 300px;
+  width: 18em;
+  margin: 2em auto;
   border: 1em solid white;
   border-radius: 50%;
   background: url("/resources/img/IMG-5862 - Copy.jpg  ");
@@ -172,6 +173,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home_contact .email span {
@@ -191,7 +198,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 1em;
+  margin: 0 auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -201,8 +208,8 @@
 }
 
 .home .social-container a {
-  margin: 1em 1em;
-  font-size: small;
+  margin: 0 1em;
+  font-size: 0.8em;
 }
 
 .home .name {
@@ -259,9 +266,8 @@
 .about_download {
   margin: 1em auto;
   background-color: #27bfca;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 15em;
+  text-align: center;
   border-radius: 20px;
   padding: 15px;
   font-weight: 700;
@@ -349,10 +355,14 @@
   margin-bottom: 5em;
   line-height: 1em;
   font-size: 1.1em;
+  font-weight: 700;
+  color: #303030;
 }
 
 .school_course-name {
+  font-weight: 400;
   margin: 1em 0.2em;
+  color: gray;
 }
 
 .skills {
@@ -365,7 +375,7 @@
 
 .skills_item label {
   display: inline-block;
-  color: #525252;
+  color: #605856;
   width: 4em;
   height: 20px;
   font-weight: bolder;
@@ -392,6 +402,173 @@ progress[value]::after {
   content: '80%';
 }
 
+.jobs {
+  width: 70vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.jobs .text-secondary {
+  color: #27bfca;
+}
+
+.jobs_job {
+  background: white;
+  padding: 0.5rem;
+  border-bottom: 5px solid #27bfca;
+}
+
+.jobs_job h2,
+.jobs_job h3 {
+  margin: 0.5rem 0;
+}
+
+.jobs_job h6 {
+  margin: 0.3rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 4em;
+  }
+  .home .img_container {
+    margin: 1em 0;
+  }
+  .home_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 3em;
+    text-align: left;
+  }
+  .home_info h2,
+  .home_info h3 {
+    text-align: left;
+  }
+  .home_contact {
+    text-align: left;
+  }
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about_img {
+    width: 50%;
+  }
+  .about_text {
+    width: 50%;
+    padding: 1.5em;
+    text-align: left;
+  }
+  .about_text h3 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: x-large;
+    margin: 0 auto;
+    color: #27bfca;
+  }
+  .about_text_lang {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .about_download {
+    margin: 1em 0;
+  }
+  .service {
+    margin: 3em;
+  }
+  .service_ {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .education {
+    margin: 3em;
+  }
+  .menu-btn {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .navbar {
+    visibility: visible;
+    margin-top: 1em;
+    margin-right: 1em;
+  }
+  .navbar_list {
+    display: block;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .navbar_list .nav-item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .navbar_list .nav-link {
+    font-size: 1rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1em 12em;
+  }
+  .about {
+    padding: 1em 4em;
+  }
+  .about_img {
+    width: 40%;
+  }
+  .service {
+    margin: 2em 4em;
+  }
+  .service_ {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .education {
+    margin: 2em 4em;
+  }
+}
+
 body {
   background: #f3f3f3;
   color: #000;
@@ -412,7 +589,7 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -427,6 +604,7 @@ header {
   padding: 0.5rem;
   -webkit-box-shadow: 0 0 40px -80px rgba(0, 0, 0, 0.8);
           box-shadow: 0 0 40px -80px rgba(0, 0, 0, 0.8);
+  height: 80px;
 }
 
 .card {

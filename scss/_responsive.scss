@@ -1,0 +1,134 @@
+@include media-md {
+    .home {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 4em;
+
+        .img_container {
+            margin: 1em 0;
+        }
+
+        &_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 3em;
+            text-align: left;
+
+            h2,
+            h3 {
+                text-align: left;
+            }
+
+        }
+
+        &_contact {
+            text-align: left;
+        }
+    }
+
+    .about {
+        display: flex;
+
+        &_img {
+            width: 50%;
+        }
+
+        &_text {
+            width: 50%;
+            padding: 1.5em;
+            text-align: left;
+
+            h3 {
+                width: fit-content;
+                font-size: x-large;
+                margin: 0 auto;
+                color: $sec-color;
+            }
+
+            &_lang {
+                justify-content: flex-start;
+            }
+        }
+
+        &_download {
+            margin: 1em 0;
+        }
+    }
+
+    .service {
+        margin: 3em;
+    }
+
+    .service_ {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .education {
+        margin: 3em;
+    }
+
+    .menu-btn {
+        visibility: hidden;
+        opacity: 0;
+        transition: none;
+    }
+
+    .navbar {
+        visibility: visible;
+        margin-top: 1em;
+        margin-right: 1em;
+
+
+        &_list {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: transparent;
+            text-align: right;
+
+            .nav-item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            .nav-link {
+                font-size: 1rem;
+                display: inline-flex;
+            }
+        }
+
+    }
+}
+
+@include media-lg {
+    .home {
+        justify-content: space-between;
+        margin: 1em 12em;
+    }
+
+    .about {
+        padding: 1em 4em;
+
+        &_img {
+            width: 40%;
+        }
+    }
+
+    .service {
+        margin: 2em 4em;
+    }
+
+    .service_ {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .education {
+        margin: 2em 4em;
+    }
+}

@@ -1,0 +1,27 @@
+.jobs {
+    width: 70vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    .text-secondary {
+        color: $sec-color;
+    }
+
+    &_job {
+        background: lighten($primary-color, $amount: 10%);
+        padding: 0.5rem;
+        border-bottom: 5px solid $sec-color;
+
+
+        h2,
+        h3 {
+            margin: 0.5rem 0;
+        }
+
+        h6 {
+            margin: 0.3rem 0;
+        }
+    }
+}
