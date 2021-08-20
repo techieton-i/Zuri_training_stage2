@@ -42,3 +42,8 @@ $text-color:rgb(51, 51, 51);
         @content;
     }
 }
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}

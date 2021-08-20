@@ -7,6 +7,11 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
 .menu-btn {
   position: fixed;
   z-index: 1;
@@ -141,6 +146,7 @@
 .home {
   margin: 5em;
   color: #333333;
+  text-align: left;
 }
 
 .home .img_container {
@@ -149,8 +155,8 @@
   margin: 2em auto;
   border: 1em solid white;
   border-radius: 50%;
-  background: url("/resources/img/IMG-5862 - Copy.jpg  ");
-  background-position: center;
+  background: url("/resources/img/IMG-20210729-WA0029.jpg");
+  background-position: top;
   background-size: cover;
 }
 
@@ -189,7 +195,14 @@
   margin: 2em;
 }
 
-.home .social-container {
+.home .name {
+  font-weight: 600;
+  font-size: 2.5em;
+  margin-left: -8px;
+  text-transform: capitalize;
+}
+
+.social-container {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -207,15 +220,9 @@
           align-items: center;
 }
 
-.home .social-container a {
+.social-container a {
   margin: 0 1em;
   font-size: 0.8em;
-}
-
-.home .name {
-  font-weight: 600;
-  font-size: 2.5em;
-  text-transform: capitalize;
 }
 
 .about {
@@ -310,7 +317,7 @@
 }
 
 .service_item .alt {
-  color: #ff652f;
+  color: #27bfca;
   margin: 20px 0;
 }
 
@@ -348,7 +355,7 @@
   width: 1px;
   opacity: 0.5;
   height: 150%;
-  background-color: #e6e6e6;
+  background-color: #d1d1d1;
 }
 
 .school-name {
@@ -376,7 +383,7 @@
 .skills_item label {
   display: inline-block;
   color: #605856;
-  width: 4em;
+  width: 10em;
   height: 20px;
   font-weight: bolder;
 }
@@ -400,6 +407,24 @@ progress[value]::-moz-progress-bar {
 
 progress[value]::after {
   content: '80%';
+}
+
+.experience {
+  margin: 4em 0;
+}
+
+.row {
+  position: relative;
+}
+
+.row::before {
+  content: "";
+  position: absolute;
+  bottom: 2.4em;
+  left: 7em;
+  width: 80%;
+  height: 1px;
+  background-color: #dddddd;
 }
 
 .jobs {
@@ -442,6 +467,13 @@ progress[value]::after {
         -ms-flex-align: center;
             align-items: center;
     margin: 4em;
+  }
+  .home_contact {
+    margin-left: -1.9em;
+  }
+  .home .social-container {
+    margin: 0;
+    margin-left: -1em;
   }
   .home .img_container {
     margin: 1em 0;
@@ -540,14 +572,33 @@ progress[value]::after {
     display: -ms-inline-flexbox;
     display: inline-flex;
   }
+  .experience {
+    margin-left: 3.5em;
+  }
+  .my_skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .my_skills .skills {
+    margin-left: 3.5em;
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  header {
+    margin: auto;
+  }
+  header .img-container {
+    margin-left: 10em;
+    padding: 0.5em 1em;
+  }
   .home {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 1em 12em;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 7em 12em;
   }
   .about {
     padding: 1em 4em;
@@ -566,6 +617,76 @@ progress[value]::after {
   }
   .education {
     margin: 2em 4em;
+    padding: 1em 2em;
+  }
+  .experience {
+    margin: 3em 6em;
+  }
+  .experience .jobs {
+    padding: 1em 1.5em;
+  }
+  .skills_item {
+    margin: 2em em;
+  }
+  .navbar {
+    position: absolute;
+    left: 60%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding-right: 5em;
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .row .education {
+    width: 50%;
+  }
+  .row .experience {
+    width: 50%;
+  }
+  .row .experience .jobs {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .home {
+    margin: 7em auto;
+  }
+  .about {
+    padding: 1em 6em;
+  }
+  .about_img {
+    width: 35%;
+  }
+  .about_text {
+    width: 40%;
+  }
+  .service {
+    margin: 2em 8em;
+  }
+  .service_ {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .row .education {
+    width: 50%;
+  }
+  .row .experience {
+    width: 50%;
+  }
+  .row .experience .jobs {
+    width: 100%;
   }
 }
 
@@ -604,7 +725,7 @@ header {
   padding: 0.5rem;
   -webkit-box-shadow: 0 0 40px -80px rgba(0, 0, 0, 0.8);
           box-shadow: 0 0 40px -80px rgba(0, 0, 0, 0.8);
-  height: 80px;
+  height: 90px;
 }
 
 .card {
@@ -615,5 +736,16 @@ header {
   border: 1px solid #e9e9e9;
   -webkit-box-shadow: 0 0 8em -90px rgba(0, 0, 0, 0.9);
           box-shadow: 0 0 8em -90px rgba(0, 0, 0, 0.9);
+}
+
+footer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

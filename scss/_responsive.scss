@@ -5,6 +5,15 @@
         align-items: center;
         margin: 4em;
 
+        &_contact {
+            margin-left: -1.9em;
+        }
+
+        .social-container {
+            margin: 0;
+            margin-left: -1em;
+        }
+
         .img_container {
             margin: 1em 0;
         }
@@ -103,12 +112,36 @@
         }
 
     }
+
+    .experience {
+        margin-left: 3.5em;
+    }
+
+    .my_skills {
+        display: flex;
+
+        .skills {
+            margin-left: 3.5em;
+            width: 50%;
+        }
+    }
+
 }
 
 @include media-lg {
+    header {
+        margin: auto;
+
+        .img-container {
+            margin-left: 10em;
+            padding: 0.5em 1em;
+        }
+
+    }
+
     .home {
-        justify-content: space-between;
-        margin: 1em 12em;
+        justify-content: space-evenly;
+        margin: 7em 12em;
     }
 
     .about {
@@ -130,5 +163,89 @@
 
     .education {
         margin: 2em 4em;
+        padding: 1em 2em;
+    }
+
+    .experience {
+        margin: 3em 6em;
+
+        .jobs {
+            padding: 1em 1.5em;
+        }
+    }
+
+    .skills {
+
+        &_item {
+            margin: 2em em;
+        }
+    }
+
+    .navbar {
+        position: absolute;
+        left: 60%;
+        width: fit-content;
+        padding-right: 5em;
+
+    }
+
+    .row {
+        display: flex;
+
+        .education {
+            width: 50%;
+        }
+
+        .experience {
+            width: 50%;
+
+            .jobs {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@include media-xl {
+    .home {
+        margin: 7em auto;
+    }
+
+    .about {
+        padding: 1em 6em;
+
+        &_img {
+            width: 35%;
+        }
+
+        &_text {
+            width: 40%;
+        }
+    }
+
+    .service {
+        margin: 2em 8em;
+    }
+
+    .service_ {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .row {
+        display: flex;
+
+        .education {
+            width: 50%;
+        }
+
+        .experience {
+            width: 50%;
+
+            .jobs {
+                width: 100%;
+            }
+        }
     }
 }

@@ -1,6 +1,7 @@
 .home {
     margin: 5em;
     color: $text-color;
+    text-align: left;
 
 
     .img_container {
@@ -9,8 +10,8 @@
         margin: 2em auto;
         border: 1em solid white;
         border-radius: 50%;
-        background: url('/resources/img/IMG-5862\ -\ Copy.jpg  ');
-        background-position: center;
+        background: url('/resources/img/IMG-20210729-WA0029.jpg');
+        background-position: top;
         background-size: cover;
     }
 
@@ -46,24 +47,27 @@
         }
     }
 
-    .social-container {
-        width: fit-content;
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        justify-content: center;
-        align-items: center;
 
-        a {
-            margin: 0 1em;
-            font-size: 0.8em;
-        }
-
-    }
 
     .name {
         font-weight: 600;
         font-size: 2.5em;
+        margin-left: -8px;
         text-transform: capitalize;
     }
+}
+
+.social-container {
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        margin: 0 1em;
+        font-size: 0.8em;
+    }
+
 }
