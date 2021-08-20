@@ -288,6 +288,7 @@
 .service_title {
   margin: 2em;
   position: relative;
+  z-index: -1;
 }
 
 .service_title h3 {
@@ -355,12 +356,13 @@
   margin-top: 1em;
   padding: 1em;
   position: relative;
-  z-index: 0;
+  z-index: -1;
 }
 
 .uni .info::before {
   content: '';
   position: absolute;
+  z-index: -1;
   top: -1em;
   left: -2em;
   width: 1px;
