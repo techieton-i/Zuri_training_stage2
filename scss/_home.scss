@@ -15,6 +15,13 @@
         background-size: cover;
     }
 
+    .img_container {
+        min-height: 300px;
+        width: 18em;
+        margin: auto;
+        border-radius: 50%;
+    }
+
     h2,
     h3 {
         text-align: center;

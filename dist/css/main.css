@@ -75,7 +75,7 @@
 }
 
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -158,6 +158,13 @@
   background: url("/dist/img/my_pic.jpg");
   background-position: top;
   background-size: cover;
+}
+
+.home .img_container {
+  min-height: 300px;
+  width: 18em;
+  margin: auto;
+  border-radius: 50%;
 }
 
 .home h2,
@@ -418,20 +425,6 @@ progress[value]::after {
   margin: 4em 0;
 }
 
-.row {
-  position: relative;
-}
-
-.row::before {
-  content: "";
-  position: absolute;
-  bottom: 2.4em;
-  left: 7em;
-  width: 80%;
-  height: 1px;
-  background-color: #dddddd;
-}
-
 .jobs {
   width: 70vw;
   margin: 2rem auto 0 auto;
@@ -559,6 +552,7 @@ progress[value]::after {
     transition: none;
   }
   .navbar {
+    position: absolute;
     visibility: visible;
     margin-top: 1em;
     margin-right: 1em;
