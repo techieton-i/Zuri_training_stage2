@@ -659,9 +659,6 @@ progress[value]::after {
 @media screen and (min-width: 1600px) {
   .home {
     margin: 7em auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   .about {
     padding: 1em 6em;
